@@ -2,7 +2,7 @@ export const SVGS = [
 	{
 		id: 1,
 		title: 'Discord',
-		category: 'About',
+		category: 'All',
 		route: '/library/discord.svg',
 		url: 'https://discord.com/'
 	},
