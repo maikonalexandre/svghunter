@@ -5,8 +5,6 @@
 
 	import MagnifyingGlass from 'phosphor-svelte/lib/MagnifyingGlass';
 	import X from 'phosphor-svelte/lib/X';
-
-	//dark:border-neutral-400 dark:bg-neutral-700/10 dark:focus:ring-neutral-700
 </script>
 
 <div class="relative w-full">
