@@ -20,6 +20,14 @@
 
 		<nav class="border-b">
 			<ul class="w-full flex flex-col gap-2 pb-2">
+				<li class="flex" aria-current={$page.url.pathname === `/` ? 'page' : undefined}>
+					<a
+						href="/"
+						data-currentpage={$page.url.pathname == '/'}
+						class="w-full text-sm font-norm text-neutral-700 p-2 transition duration-100 rounded-lg data-[currentpage=true]:bg-neutral-200 hover:bg-neutral-200"
+						data-sveltekit-preload-data>All</a
+					>
+				</li>
 				{#each categories.sort() as category}
 					<li
 						class="flex"
