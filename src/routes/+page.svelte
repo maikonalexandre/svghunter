@@ -9,15 +9,16 @@
 
 	let searchTerm = '';
 	let filteredSvgs: svgType[] = [];
+	let svgsByCategory = svgsJson || [];
 
 	if (searchTerm.length === 0) {
-		filteredSvgs = svgsJson.sort((a: svgType, b: svgType) => {
+		filteredSvgs = svgsByCategory.sort((a: svgType, b: svgType) => {
 			return b.id - a.id;
 		});
 	}
 
 	const searchSvgs = () => {
-		return (filteredSvgs = svgsJson.filter((svg: svgType) => {
+		return (filteredSvgs = svgsByCategory.filter((svg: svgType) => {
 			let svgTitle = svg.title.toLowerCase();
 			return svgTitle.includes(searchTerm.toLowerCase());
 		}));
@@ -30,9 +31,14 @@
 </script>
 
 <section>
-	<Search {clearSearch} on:input={() => {}} placeholder="search items" {searchTerm} />
+	<Search
+		bind:searchTerm
+		on:input={searchSvgs}
+		clearSearch={() => clearSearch()}
+		placeholder={`Search item...`}
+	/>
 	<Grid>
-		{#each svgsJson as svg}
+		{#each filteredSvgs as svg}
 			<SvgCard {svg} />
 		{/each}
 	</Grid>

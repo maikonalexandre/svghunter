@@ -3,10 +3,8 @@
 
 	import download from 'downloadjs';
 	import { toast } from 'svelte-sonner';
-	import type { category, svgType } from '../types';
+	import type { svgType } from '../types';
 	import { MIMETYPE, getSvgContent } from '../utils';
-
-	import Star from 'phosphor-svelte/lib/Star';
 
 	export let svg: svgType;
 
@@ -27,7 +25,6 @@
 			await navigator.clipboard.writeText(content);
 		}
 		toast.success('Copied to clipboard!', {
-			icon: Star,
 			description: `${svg.title} - ${svg.category}`
 		});
 	};
@@ -37,8 +34,9 @@
 	<img src={svg.route} alt={svg.title} class="mb-4 mt-2 h-10" />
 	<div class="mb-3 flex flex-col items-center justify-center">
 		<p class="truncate text-[15px] font-medium">{svg.title}</p>
-		<a href={`/${svg.category}`} class="text-sm lowercase text-neutral-500 hover:underline"
-			>{svg.category}</a
+		<a
+			href={`/${svg.category.toLowerCase()}`}
+			class="text-sm lowercase text-neutral-500 hover:underline">{svg.category}</a
 		>
 	</div>
 	<div class="flex items-center space-x-1">
