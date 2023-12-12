@@ -1,15 +1,18 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { SVGS } from '../data/svgs';
-	import { Horse, ArrowSquareUpRight, Cube, GithubLogo } from 'phosphor-svelte';
+	import { ArrowSquareUpRight, Cube, GithubLogo } from 'phosphor-svelte';
+	import Footer from './Footer.svelte';
 
 	const categories = SVGS.map((e) => {
 		return e.category;
 	}).filter((category, i, arr) => arr.indexOf(category) === i);
 </script>
 
-<div class="p-4 max-w-[200px] overflow-hidden">
-	<header class="flex flex-col gap-2">
+<div
+	class="p-4 max-w-[200px] max-md:max-w-none max-md:w-full overflow-hidden min-h-screen max-md:min-h-0 border-r max-md:border-r-transparent"
+>
+	<header class="flex flex-col max-md:gap-0">
 		<div class="border-b py-2">
 			<div class="flex items-center justify-between">
 				<h1 class="font-medium text-lg">SVGHunter</h1>
@@ -19,7 +22,7 @@
 		</div>
 
 		<nav class="border-b">
-			<ul class="w-full flex flex-col gap-2 pb-2">
+			<ul class="w-full flex flex-col gap-2 py-2 max-md:flex-row">
 				<li class="flex" aria-current={$page.url.pathname === `/` ? 'page' : undefined}>
 					<a
 						href="/"
@@ -44,9 +47,10 @@
 			</ul>
 		</nav>
 
-		<div class="flex flex-col border-b gap-2 py-2">
+		<div class="flex flex-col gap-2 py-2 max-md:flex-row flex-wrap">
 			<a
-				href="#"
+				target="_blank"
+				href="https://github.com/maikonalexandre/svghunter"
 				class="font-light p-2 rounded-md flex items-center gap-2 text-neutral-900 hover:bg-neutral-200"
 			>
 				<Cube />
@@ -55,7 +59,8 @@
 			</a>
 
 			<a
-				href="#"
+				target="_blank"
+				href="https://github.com/maikonalexandre/svghunter"
 				class="font-light p-2 rounded-md flex items-center gap-2 text-neutral-900 hover:bg-neutral-200"
 			>
 				<GithubLogo />
@@ -65,9 +70,5 @@
 		</div>
 	</header>
 
-	<footer class="py-4 font-light text-sm text-neutral-900">
-		<span class="cursor-pointer">
-			❤️ Made by <a target="_blank" href="https://www.maikonalexandre.com.br">Maike Dev</a>
-		</span>
-	</footer>
+	<Footer />
 </div>
