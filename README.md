@@ -1,38 +1,33 @@
-# create-svelte
+# SVGHunter 🏹
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+![Captura de tela de 2023-12-12 17-29-09](https://github.com/maikonalexandre/svghunter/assets/86725282/d8727b51-07f4-4d21-98b5-c9f55e7d7094)
 
-## Creating a project
+<div align="center">
+  <samp>
+    <a target="_blank" href='https://maikonalexandre.com.br/'>demo</a> •
+    <a target="_blank" href='mailto:maikonalexandre574@gmail.com'>submit logo</a> •
+    <a target="_blank" href='https://www.linkedin.com/in/maikon-alexandre'>be a contributor</a> 
+  </samp>
+</div>
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 📚 Informações sobre o projeto
+Este projeto feito usando a linguagem go, se consiste em uma api onde os usuarios poderão criar, editar, deletar e visulisar uma vaga ou obter uma lista de todas as vagas desponiveis.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## ⚙️ Instalação
+```
+# Abra um terminal e copie este repositório com o comando
+$ git clone https://github.com/maikonalexandre/svghunter
+```
+```
+# Instale as dependências
+$ npm ci
 
-# create a new project in my-app
-npm create svelte@latest my-app
+# Inicie a aplicação
+$ npm run dev
 ```
 
-## Developing
+## 🛠️ Tecnologias/Ferramentas utilizadas
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+* [SvelteKit]()
+* [typescript]()
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
