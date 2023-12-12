@@ -37,7 +37,7 @@
 		bind:searchTerm
 		on:input={searchSvgs}
 		clearSearch={() => clearSearch()}
-		placeholder={`Search item...`}
+		placeholder={`Search in ${filteredSvgs.length} items...`}
 	/>
 	<Grid>
 		{#each filteredSvgs as svg}
