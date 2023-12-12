@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import Sidebar from '../components/Sidebar.svelte';
+	import Navbar from '../components/Navbar.svelte';
 	import Transiction from '../components/Transiction.svelte';
 	import { page } from '$app/stores';
 	import { Toaster } from 'svelte-sonner';
@@ -13,7 +13,7 @@
 </svelte:head>
 
 <div class="antialiased flex flex-col max-w-7xl mx-auto min-w-screen">
-	<Sidebar />
+	<Navbar />
 	<main class="flexflex-1 p-4 rounded-md max-md:p-4 min-h-screen">
 		<Transiction pathname={$page.url.pathname}>
 			<slot />
