@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex flex-col items-center justify-center rounded-md p-4 border">
-	<div class="mb-4 mt-2 h-10 bg-black w-10" />
+	<div class="mb-4 mt-2 h-10 bg-neutral-400 w-10" />
 	<div class="mb-3 flex flex-col items-center justify-center">
 		<p class="truncate text-[15px] font-medium">Title</p>
 		<a href="#" class="text-sm lowercase text-neutral-500 hover:underline">category</a>

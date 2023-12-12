@@ -14,15 +14,15 @@
 >
 	<header class="flex flex-col max-md:gap-0">
 		<div class="border-b py-2">
-			<div class="flex items-center justify-between">
+			<div class="flex items-baseline justify-between">
 				<h1 class="font-medium text-lg">SVGHunter</h1>
-				<div>🌞</div>
+				<span class="text-sm font-medium text-neutral-500">v 1.0.1</span>
 			</div>
-			<span class="text-sm font-semibold text-neutral-400">✍️ Lindas logos SVG</span>
+			<span class="text-sm block pt-2 text-neutral-400">🥰 Lindas logos SVG</span>
 		</div>
 
 		<nav class="border-b">
-			<ul class="w-full flex flex-col gap-2 py-2 max-md:flex-row">
+			<ul class="w-full flex flex-col gap-2 py-2 max-md:flex-row overflow-x-auto">
 				<li class="flex" aria-current={$page.url.pathname === `/` ? 'page' : undefined}>
 					<a
 						href="/"
@@ -47,7 +47,7 @@
 			</ul>
 		</nav>
 
-		<div class="flex flex-col gap-2 py-2 max-md:flex-row flex-wrap">
+		<div class="flex flex-col gap-2 py-2 max-md:flex-row flex-wrap max-md:border-b">
 			<a
 				target="_blank"
 				href="https://github.com/maikonalexandre/svghunter"
