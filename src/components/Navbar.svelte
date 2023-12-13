@@ -10,7 +10,7 @@
 
 <header class="flex flex-col max-md:gap-0 p-4">
 	<div
-		class="flex items-center justify-between my-3 py-1 px-2 border-b max-sm:flex-col max-sm:gap-2"
+		class="flex items-center justify-between my-3 pt-1 pb-2 px-2 border-b max-sm:flex-col max-sm:gap-2"
 	>
 		<div class="flex items-baseline gap-2">
 			<h1 class="font-semibold text-2xl">🏹 SVGHunter</h1>
