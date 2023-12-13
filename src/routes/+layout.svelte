@@ -9,7 +9,8 @@
 
 <svelte:head>
 	<title>SVGHunter</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="svg hunter" content="A library with open source logos" />
+	<meta name="google-site-verification" content="EOVyvjb1LaJ29mw3mxRQhL5wvI7HjeDxxB4-7vV6NvE" />
 </svelte:head>
 
 <div class="antialiased flex flex-col max-w-7xl mx-auto min-w-screen">
