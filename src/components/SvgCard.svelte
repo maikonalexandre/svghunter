@@ -36,7 +36,7 @@
 		<p class="truncate text-[15px] font-medium">{svg.title}</p>
 		<a
 			href={`/${svg.category.toLowerCase()}`}
-			class="text-sm lowercase text-neutral-500 hover:underline">{svg.category}</a
+			class="text-sm lowercase text-neutral-500 first-letter:uppercase hover:underline">{svg.category}</a
 		>
 	</div>
 	<div class="flex items-center space-x-1">
