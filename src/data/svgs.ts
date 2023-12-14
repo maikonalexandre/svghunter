@@ -1170,18 +1170,19 @@ export const SVGS = [
 	},
 	{
 		id: 168,
-		title: 'Elementor',
-		category: 'Software',
-		route: '/svgs/elementor.svg',
-		url: 'https://elementor.com/'
+		title: 'Legue of legends',
+		category: 'Games',
+		route: '/svgs/legue_of_legends.svg',
+		url: 'https://www.leagueoflegends.com/pt-br/'
 	},
 	{
 		id: 169,
-		title: 'Prime video',
-		category: 'Entertainment',
-		route: '/svgs/prime-video.svg',
-		url: 'https://primevideo.com/'
+		title: 'Dota 2',
+		category: 'Games',
+		route: '/svgs/dota_2.svg',
+		url: 'https://www.dota2.com/home'
 	},
+
 	{
 		id: 170,
 		title: 'Chrome',
@@ -1268,11 +1269,12 @@ export const SVGS = [
 	},
 	{
 		id: 182,
-		title: 'Tor',
-		category: 'Browser',
-		route: '/svgs/tor.svg',
-		url: 'https://www.torproject.org/'
+		title: 'World of warcraft',
+		category: 'Games',
+		route: '/svgs/world_of_warcraft.svg',
+		url: 'https://worldofwarcraft.blizzard.com/pt-br/'
 	},
+
 	{
 		id: 183,
 		title: 'Codesandbox',
@@ -1548,11 +1550,12 @@ export const SVGS = [
 	},
 	{
 		id: 222,
-		title: 'Photoshop',
-		category: 'Design',
-		route: '/svgs/photoshop.svg',
-		url: 'https://x.com'
+		title: 'Counter Strike',
+		category: 'Games',
+		route: '/svgs/counter_strike.svg',
+		url: 'https://www.counter-strike.net/'
 	},
+
 	{
 		id: 223,
 		title: 'Premiere',
@@ -1617,20 +1620,6 @@ export const SVGS = [
 		url: 'https://www.randevum.co'
 	},
 	{
-		id: 68067,
-		title: 'Stately.ai',
-		category: 'Software',
-		route: '/svgs/stately.svg',
-		url: 'https://stately.ai/'
-	},
-	{
-		id: 68068,
-		title: 'XState',
-		category: 'Library',
-		route: '/svgs/xstate.svg',
-		url: 'https://github.com/statelyai/xstate'
-	},
-	{
 		id: 232,
 		title: 'Hashnode',
 		category: 'Social',
@@ -1638,38 +1627,94 @@ export const SVGS = [
 		url: 'https://hashnode.com'
 	},
 	{
-		id: 69114,
+		id: 233,
+		title: 'Stately.ai',
+		category: 'Software',
+		route: '/svgs/stately.svg',
+		url: 'https://stately.ai/'
+	},
+	{
+		id: 234,
+		title: 'XState',
+		category: 'Library',
+		route: '/svgs/xstate.svg',
+		url: 'https://github.com/statelyai/xstate'
+	},
+	{
+		id: 235,
 		title: 'Rowy',
 		category: 'CMS',
 		route: '/svgs/rowy.svg',
 		url: 'https://www.rowy.io/'
 	},
 	{
-		id: 12251,
+		id: 236,
 		title: 'BuildShip',
 		category: 'AI',
 		route: '/svgs/buildship.svg',
 		url: 'https://buildship.com/'
 	},
 	{
-		id: 24648068505,
+		id: 237,
 		title: 'Cal.com',
 		category: 'Software',
 		route: '/svgs/cal.svg',
 		url: 'https://cal.com'
 	},
 	{
-		id: 70674,
+		id: 238,
 		title: 'SST',
 		category: 'Framework',
 		route: '/svgs/sst.svg',
 		url: 'https://sst.dev/'
 	},
 	{
-		id: 2342453,
+		id: 239,
 		title: 'Documenso',
 		category: 'Software',
 		route: '/svgs/documenso.svg',
 		url: 'https://documenso.com'
+	},
+	{
+		id: 240,
+		title: 'Photoshop',
+		category: 'Design',
+		route: '/svgs/photoshop.svg',
+		url: 'https://x.com'
+	},
+	{
+		id: 241,
+		title: 'Minecraft',
+		category: 'Games',
+		route: '/svgs/minecraft.svg',
+		url: 'https://www.minecraft.net/pt-br'
+	},
+	{
+		id: 242,
+		title: 'Valorant',
+		category: 'Games',
+		route: '/svgs/valorant.svg',
+		url: 'https://playvalorant.com/en-us/'
+	},
+	{
+		id: 243,
+		title: 'Elementor',
+		category: 'Software',
+		route: '/svgs/elementor.svg',
+		url: 'https://elementor.com/'
+	},
+	{
+		id: 244,
+		title: 'Prime video',
+		category: 'Entertainment',
+		route: '/svgs/prime-video.svg',
+		url: 'https://primevideo.com/'
+	},
+	{
+		id: 245,
+		title: 'Tor',
+		category: 'Browser',
+		route: '/svgs/tor.svg',
+		url: 'https://www.torproject.org/'
 	}
 ];
